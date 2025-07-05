@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {}
+
+.home {
+    /* padding: 0px 10vw; */
+}
+
+Nav {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10vw;
+    background-color: rgba(255, 255, 255, 0.417);
+    width: 100vw;
+    height: 55px;
+    backdrop-filter: blur(8px);
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.homeContain {
+    height: 100vh;
+    padding: 0px 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vw;
+
+}
+
+.media {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    gap: 12px;
+}
+
+.homeText {
+    max-width: 600px;
+    /* border: 1px solid black; */
+    width: 45vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.name {
+    font-weight: 600;
+}
+
+
+.homeImage {
+    /* border: 1px solid black; */
+}
+
+.homeImage .profileImg {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+
+.btn {
+    background: black;
+    color: white;
+    padding: 8.75px 12.75px;
+    font-size: 0.6rem;
+    border-radius: 4px;
+    border: none;
+    margin-right: 5px;
+    margin-top: 20px;
+    border: 1px solid black;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+
+.p1 {
+    font-weight: 550;
+}
+
+.line1 {
+    background: black;
+    min-width: 100px;
+    height: 1px;
+    color: black;
+    border: 1px solid black;
+    margin-right: 9px;
+}
+
+.line2 {
+    background: black;
+    min-width: 250px;
+    height: 1px;
+    color: black;
+    border: 1px solid black;
+    margin-left: 9px;
+}
+
+.dFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dFlex2 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.about {
+    height: 100vh;
+    background: white;
+    padding: 10vh 10vw;
+}
+
+.boxAbout {
+    background: rgb(217, 209, 209);
+    width: 80vw;
+    height: 80vh;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+}
+
+.aboutContain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 90%;
+
+}
+
+.left {
+    /* border: 1px solid red; */
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightbox {
+    /* border: 1px solid blue; */
+    width: 65%;
+    height: 100%;
+}
+
+.leftbox {
+    width: 80%;
+    height: 70%;
+    background-image: url("./image/sir.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+
+
+.rightbox {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    max-width: 700px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.top-section {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.rightbox h3 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    color: #1f2937;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.box p {
+    font-size: 0.8rem;
+    color: #343a43;
+    line-height: 1.3;
+}
+
+.personal-info h3 {
+    font-size: 1.25rem;
+    color: #1f2937;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.6rem;
+    font-size: 0.95rem;
+    color: #374151;
+    word-wrap: break-word;
+}
+
+.info-grid div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    word-break: break-word;
+}
+
+.info-grid img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    display: inline-block;
+}
+
+.edu {
+    font-size: 0.83rem;
+}
+
+.dFlex2 h1 {
+    font-weight: 400;
+}
+.skillSection{
+    padding: 0px 10vw;
+
+}
+
+
+
+
+
+
+
+
+
+.skills-tags {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+
+
+
+
+.skills-tags h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #333;
+}
+
+.skill-category {
+  margin-bottom: 1rem;
+}
+
+.skill-category h3 {
+  font-size: 1.2rem;
+margin-bottom: 1.5rem;
+  color: #444;
+  display: flex;
+align-items: center;
+gap: 30px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f0f4f8;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.tag:hover {
+  background-color: #e0ecff;
+  color: #000;
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+.tag img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+/* Certifications */
+.cert-list {
+  list-style: disc inside;
+  color: #555;
+  padding-left: 1rem;
+  font-size: 0.95rem;
+}
+
+.cert-list li {
+  margin-bottom: 0.5rem;
+}
