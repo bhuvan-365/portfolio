@@ -188,7 +188,15 @@ nav ul li a.active::after {
     background: white;
     color: black;
 }
-
+a.btn{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+a.btn:active,a.btn:visited,a.btn:focus{
+        background-color: white !important;
+    color: black !important;
+}
 .p1 {
     font-weight: 550;
 }
@@ -1274,4 +1282,7 @@ nav ul li a.active::after {
 @keyframes blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
+}
+.linkedDwn{
+    color: white;
 }
