@@ -2,191 +2,427 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
-    <div class="home">
-        <Nav>
-            <div class="name">Bhuvan.dev</div>
-            <div class="navItem">
-                <ul class="navList">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#project">Project</a></li>
-                    <li><a href="#contact">Contact</a></li>
+  <section class="home" id="home">
+    <Nav>
+      <div class="name">Bhuvan.dev</div>
 
-                </ul>
-            </div>
-        </Nav>
-        <div class="homeContain " id="home">
-            <div class="media">
-                <a href="https://x.com/bhuvan_365"> <img src="./svg/x.svg" alt=""></a>
+      <div class="toggle">
+        <img src="./svg/hamburger.svg" alt="">
+      </div>
 
-                <a
-                    href="https://www.linkedin.com/in/bhuvan-bhattarai-a00413322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                    <img src="./svg/linkedIn.svg" alt=""></a>
+      <div class="navItem">
+        <ul class="navList">
+          <li><a  href="#home">Home</a></li>
+          <li ><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
 
-                <a href="https://github.com/bhuvan-365"><img src="./svg/github.svg" alt=""></a>
+        </ul>
+      </div>
+    </Nav>
+    <div class="homeContain " id="home">
+      <div class="media">
+        <a href="https://x.com/bhuvan_365" target="_blank" rel="noopener noreferrer"> <img src="./svg/x.svg" alt=""></a>
 
+        <a href="https://www.linkedin.com/in/bhuvan-bhattarai-a00413322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank" rel="noopener noreferrer">
+          <img src="./svg/linkedIn.svg" alt=""></a>
+
+        <a href="https://github.com/bhuvan-365" target="_blank" rel="noopener noreferrer"><img src="./svg/github.svg"
+            alt=""></a>
+
+      </div>
+      <div class="homeText">
+        <h1>Hi, I'm Bhuvan <img src="./svg/wave.svg" alt=""></h1>
+        <div class="dFlex">
+          <div class="line1"></div>
+          <p class="p1">
+          <span ></span> <span class="write"></span></p>
+        </div>
+        <p>I'm a frontend developer based in Kathmandu, Nepal, passionate about crafting responsive and
+          user-friendly web interfaces. I specialize in HTML, CSS, JavaScript, React.js, Redux, Tailwind CSS,
+          and Bootstrap.</p>
+        <div class="btns">
+          <button class="btn">Download CV</button>
+          <a href="#contact"> <button class="btn">Contact Me</button>
+</a>
+        </div>
+      </div>
+      <div class="homeImage">
+        <img class="profileImg" src="./image/sir.jpg" alt="profileImg">
+      </div>
+
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="boxAbout">
+      <div class="dFlex2">
+        <h1>About Me</h1>
+        <div class="line2"></div>
+      </div>
+      <div class="aboutContain">
+        <div class="left">
+          <div class="leftbox">
+
+
+            <div class="gallery">
+              <img src="./image/sir.jpg" alt="a wolf">
+              <img src="./image/pp.jpg" alt="a lioness">
             </div>
-            <div class="homeText">
-                <h1>Hi, I'm Bhuvan <img src="./svg/wave.svg" alt=""></h1>
-                <div class="dFlex">
-                    <p class="p1">
-                    <div class="line1"></div> Front End Developer</p>
-                </div>
-                <p>I'm a frontend developer based in Kathmandu, Nepal, passionate about crafting responsive and
-                    user-friendly web interfaces. I specialize in HTML, CSS, JavaScript, React.js, Redux, Tailwind CSS,
-                    and Bootstrap.</p>
-                <div class="btns">
-                    <button class="btn">Download CV</button>
-                    <button class="btn">Contact Me</button>
-                </div>
-            </div>
-            <div class="homeImage">
-                <img class="profileImg" src="./image/sir.jpg" alt="profileImg">
-            </div>
+
+
+          </div>
 
         </div>
-    </div>
-
-    <div class="about" id="about">
-        <div class="boxAbout">
-            <div class="dFlex2">
-                <h1>About Me</h1>
-                <div class="line2"></div>
+        <div class="rightbox">
+          <div class="top-section">
+            <div class="box">
+              <h3><img src="./svg/me.svg" alt="">Who Am I</h3>
+              <p class="abtp1">
+                I’m Bhuvan Bhattarai, a self-driven frontend developer from Kathmandu, Nepal. I love
+                turning ideas into responsive, user-friendly websites using React.js, Redux, Tailwind
+                CSS, and JavaScript. My goal is to build clean, functional, and visually appealing web
+                experiences.
+                <br>
+                <br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; I’m certified by freeCodeCamp for completing
+                over 600 hours of hands-on training in JavaScript and Web Design.
+              </p>
             </div>
-            <div class="aboutContain">
-                <div class="left">
-                    <div class="leftbox">
-                    </div>
+          </div>
 
-                </div>
-                <div class="rightbox">
-                    <div class="top-section">
-                        <div class="box">
-                            <h3><img src="./svg/me.svg" alt="">Who Am I</h3>
-                            <p class="abtp1">
-                                I’m Bhuvan Bhattarai, a self-driven frontend developer from Kathmandu, Nepal. I love
-                                turning ideas into responsive, user-friendly websites using React.js, Redux, Tailwind
-                                CSS, and JavaScript. My goal is to build clean, functional, and visually appealing web
-                                experiences.
-                                <br>
-                                <br>
-                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; I’m certified by freeCodeCamp for completing
-                                over 600 hours of hands-on training in JavaScript and Web Design.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="personal-info">
-                        <h3><img src="./svg/personal.svg" alt="">Personal Info</h3>
-                        <div class="info-grid">
-                            <div><img src="./svg/name.svg" alt=""><strong>Name:</strong> Bhuvan Bhattarai</div>
-                            <div><img src="./svg/location.svg" alt=""><strong>Address:</strong> Kathmandu,Nepal</div>
-                            <div><img src="./svg/email.svg" alt=""><strong>Email:</strong> bhuvanbhattarai07@gmail.com
-                            </div>
-                            <div><img src="./svg/education.svg" alt=""><strong>Education:</strong> <span
-                                    class="edu">Bachelor of Computer Application</span> </div>
-                        </div>
-                    </div>
-                </div>
-
+          <div class="personal-info">
+            <h3><img src="./svg/personal.svg" alt="">Personal Info</h3>
+            <div class="info-grid">
+              <div><img src="./svg/name.svg" alt=""><strong>Name:</strong> Bhuvan Bhattarai</div>
+              <div><img src="./svg/location.svg" alt=""><strong>Address:</strong> Kathmandu,Nepal</div>
+              <div><img src="./svg/email.svg" alt=""><strong>Email:</strong> bhuvanbhattarai07@gmail.com
+              </div>
+              <div><img src="./svg/education.svg" alt=""><strong>Education:</strong> <span class="edu">Bachelor of
+                  Computer Application</span> </div>
             </div>
+          </div>
         </div>
-    </div><!-- EndAbout -->
 
-    <div class="skillSection" id="skills">
-
-
-
-
-
-    <section class="skills-tags">
-  <h2> Skills & Tools</h2>
-
-  <div class="skill-category">
-    <h3><img src="./svg/language.svg" alt=""> Languages & Markup</h3>
-    <div class="tags">
-      <span class="tag">
-        <img src="./image/html.svg" alt="HTML5"> HTML5
-      </span>
-      <span class="tag">
-        <img src="./image/css.svg" alt="CSS3"> CSS3
-      </span>
-      <span class="tag">
-        <img src="./image/javascript.svg" alt="JavaScript"> JavaScript (ES6+)
-      </span>
+      </div>
     </div>
-  </div>
+  </section><!-- EndAbout -->
 
-  <div class="skill-category">
-    <h3><img src="./svg/framework.svg" alt=""> Frameworks & Libraries</h3>
-    <div class="tags">
-      <span class="tag">
-        <img src="./image/react.svg" alt="React"> React.js
-      </span>
-      <span class="tag">
-        <img src="./image/redux.svg" alt="Redux"> Redux
-      </span>
-      <span class="tag">
-        <img src="./image/bootstrap.png" alt="Bootstrap"> Bootstrap
-      </span>
-      <span class="tag">
-        <img src="./image/tailwind.svg" alt="Tailwind CSS"> Tailwind CSS
-      </span>
+  <section class="skillSection" id="skills" >
+    <div class="skills-tags">
+      <h2> Skills & Tools</h2>
+
+      <div class="skill-category">
+        <h3><img src="./svg/language.svg" alt=""> Languages & Markup</h3>
+        <div class="tags">
+          <span class="tag">
+            <img src="./image/html.svg" alt="HTML5"> HTML5
+          </span>
+          <span class="tag">
+            <img src="./image/css.svg" alt="CSS3"> CSS3
+          </span>
+          <span class="tag">
+            <img src="./image/javascript.svg" alt="JavaScript"> JavaScript (ES6+)
+          </span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3><img src="./svg/framework.svg" alt=""> Frameworks & Libraries</h3>
+        <div class="tags">
+          <span class="tag">
+            <img src="./image/react.svg" alt="React"> React.js
+          </span>
+          <span class="tag">
+            <img src="./image/redux.svg" alt="Redux"> Redux
+          </span>
+          <span class="tag">
+            <img src="./image/bootstrap.png" alt="Bootstrap"> Bootstrap
+          </span>
+          <span class="tag">
+            <img src="./image/tailwind.svg" alt="Tailwind CSS"> Tailwind CSS
+          </span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3><img src="./svg/tools.svg" alt=""> Tools & Platforms</h3>
+        <div class="tags">
+
+          <span class="tag">
+            <img src="./image/github.svg" alt="GitHub"> GitHub
+          </span>
+          <span class="tag">
+            <img src="./image/vscode.svg" alt="VS Code"> VS Code
+          </span>
+          <span class="tag">
+            <img src="./image/netlify.svg" alt="Netlify"> Netlify
+          </span>
+          <span class="tag">
+            <img src="./image/vercel.webp" alt="Vercel"> Vercel
+          </span>
+          <span class="tag">
+            <img src="./image/figma.svg" alt="Figma"> Figma
+          </span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3><img src="./svg/certificate.svg" alt=""> Certifications</h3>
+        <ul class="cert-list">
+          <!-- <li><a href="https://www.freecodecamp.org/certification/bhuvanbhattarai/javascript-algorithms-and-data-structures"target="_blank" rel="noopener noreferrer" >freeCodeCamp – JavaScript Algorithms & Data Structures (300 hrs)</a></li> -->
+          <li><a href="https://www.freecodecamp.org/certification/bhuvanbhattarai/responsive-web-design" target="_blank"
+              rel="noopener noreferrer
+              ">freeCodeCamp – Responsive Web Design (300 hrs)</a> </li>
+        </ul>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <div class="skill-category">
-    <h3><img src="./svg/tools.svg" alt=""> Tools & Platforms</h3>
-    <div class="tags">
+  <section class="project-container" id="project">
+    <h1>My Latest Project</h1>
 
-      <span class="tag">
-        <img src="./image/github.svg" alt="GitHub"> GitHub
-      </span>
-      <span class="tag">
-        <img src="./image/vscode.svg" alt="VS Code"> VS Code
-      </span>
-      <span class="tag">
-        <img src="./image/netlify.svg" alt="Netlify"> Netlify
-      </span>
-      <span class="tag">
-        <img src="./image/vercel.webp" alt="Vercel"> Vercel
-      </span>
-      <span class="tag">
-        <img src="./image/figma.svg" alt="Figma"> Figma
-      </span>
-    </div>
-  </div>
+    <div class="project project1">
+      <div class="text">
+        <h2>Spotify Clone</h2>
+        <p>A functional Spotify clone built with HTML, CSS, and JavaScript. This project features core music player
+          controls like play, pause, next/previous, and volume adjustment. It dynamically fetches songs, playlists, and
+          albums from local storage and displays them in a clean, interactive library UI. This project showcases my
+          skills in media handling, responsive UI design, and building real-world web app experiences.</p>
+        <div class="project-bottom">
+          <div class="repo button">
+            <a href="https://github.com/bhuvan-365/Spotify-clone">
+              <img src="./svg/github.svg" target="_blank" alt="">
+              <div> Git Repo </div>
+            </a>
+          </div>
 
-  <div class="skill-category">
-    <h3><img src="./svg/certificate.svg" alt=""> Certifications</h3>
-    <ul class="cert-list">
-      <!-- <li><a href="https://www.freecodecamp.org/certification/bhuvanbhattarai/javascript-algorithms-and-data-structures"target="_blank" rel="noopener noreferrer" >freeCodeCamp – JavaScript Algorithms & Data Structures (300 hrs)</a></li> -->
-      <li><a href="https://www.freecodecamp.org/certification/bhuvanbhattarai/responsive-web-design"target="_blank" rel="noopener noreferrer">freeCodeCamp – Responsive Web Design (300 hrs)</a> </li>
-    </ul>
-  </div>
-</section>
-
-
-
-
-
-
-
-
+          <div class="repo button">
+            <a href="https://www.linkedin.com/posts/bhuvan-bhattarai-a00413322_webdevelopment-javascript-frontend-activity-7347248845321359362-86Pa?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFGTOuAB1X11hIarLglrI1sVM1nT3ZaJGNk"
+              target="_blank">
+              <img src="./svg/live.svg" alt="">
+              <div> Live </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="image">
+        <img src="./projectImg/spotify.png" alt="Project 1">
+      </div>
     </div>
 
 
 
+    <div class="project project2">
+      <div class="text">
+        <h2>Doozie – Simple Task Manager App (React.js)</h2>
+        <p>Doozie is a lightweight and intuitive task management app built with React.js. Users can add and organize
+          tasks, and once completed or deleted, tasks are stored in a history section using local storage for future
+          reference.</p>
+        <div class="project-bottom">
+          <div class="repo button">
+            <a href="https://github.com/bhuvan-365/Doozie-a-taskflow-web-app-" target="_blank">
+              <img src="./svg/github.svg" alt="">
+              <div> Git Repo </div>
+            </a>
+          </div>
+
+          <div class="repo button">
+            <a href="https://doozie-365.netlify.app/" target="_blank">
+              <img src="./svg/live.svg" alt="">
+              <div> Live </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="image">
+        <img src="./projectImg/react.png" alt="Project 2">
+      </div>
+    </div>
 
 
+
+    <div class="project project3">
+      <div class="text">
+        <h2>ShopVerse – Multi-Template eCommerce UI (Bootstrap)</h2>
+        <p>ShopVerse is a modern and responsive eCommerce website demo built using Bootstrap. It features clean layouts
+          for product overviews, homepage banners, category sections, and a polished navigation system. With multiple
+          page templates and a focus on design consistency.</p>
+        <div class="project-bottom">
+          <div class="repo button">
+            <a href="https://github.com/bhuvan-365/bootstrap-doc" target="_blank">
+              <img src="./svg/github.svg" alt="">
+              <div> Git Repo </div>
+            </a>
+          </div>
+
+          <div class="repo button">
+            <a href="https://ecomwithbootstrap.netlify.app/" target="_blank">
+              <img src="./svg/live.svg" alt="">
+              <div> Live </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="image">
+        <img src="./projectImg/bootstrapEcom.png" alt="Project 3">
+      </div>
+    </div>
+
+
+    <div class="project project4">
+      <div class="text">
+        <h2>Go Explorer – Mountain Discovery UI</h2>
+        <p>Go Explorer is a visually rich web project focused on showcasing breathtaking mountain images and their
+          details. Built with a strong emphasis on UI design and smooth animations, it offers a simple yet engaging
+          experience for users to explore different mountains. This project highlights my skills in layout design,
+          animation effects, and creating immersive interfaces with clean, responsive visuals.
+        </p>
+        <div class="project-bottom">
+          <div class="repo button">
+            <a href="https://github.com/bhuvan-365/mountain-website-365">
+              <img src="./svg/github.svg" target="_blank" alt="">
+              <div> Git Repo </div>
+            </a>
+          </div>
+
+          <div class="repo button">
+            <a href="https://mountains-365.netlify.app/" target="_blank">
+              <img src="./svg/live.svg" alt="">
+              <div> Live </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="image">
+        <img src="./projectImg/mountains.png" alt="Project 4">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="top-buttons">
+        <button class="contact-btn"><img src="./svg/contact.svg" alt=""> Contact Me</button>
+        <!-- <button class="support-btn">🤍 Support Me</button> -->
+      </div>
+
+      <div class="main">
+        <div class="social-links">
+          <a href="https://github.com/bhuvan-365" class="card" target="_blank">
+            <img src="./svg/github.svg" alt="">
+            <div>
+              <h3>GitHub</h3>
+              <p>Explore my code & projects</p>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/bhuvan-bhattarai-a00413322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank" rel="noopener noreferrer" class="card">
+            <img src="./svg/linkedIn.svg" alt="">
+            <div>
+              <h3>LinkedIn</h3>
+              <p>Let's connect professionally</p>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <img src="./svg/email.svg" alt="">
+            <div>
+              <h3>Email</h3>
+              <p>bhuvanbhattarai07@gmail.com</p>
+            </div>
+          </a>
+          <a href="https://x.com/bhuvan_365" target="_blank" rel="noopener noreferrer" class="card">
+            <img src="./svg/x.svg" alt="">
+            <div>
+              <h3>X</h3>
+              <p>Random thoughts & dev tweets</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Right - Contact Form -->
+        <div class="contact-form">
+          <h3> Send Me a Message</h3>
+          <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button class="button-86 sendbtn" role="button" type="submit">Send ➤</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="foot-container">
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="logo">
+            <!-- <img src="logo.png" alt="Graphy Logo" class="logo-img" /> -->
+            <h2>Bhuvan Bhattarai</h2>
+          </div>
+          <p>
+            web developer passionate about crafting clean, responsive, and interactive websites. Always learning, always
+            building. I'm happy to connect — feel free to reach out! </p>
+          <div class="social-icons">
+            <a class="iconBox " href="https://github.com/bhuvan-365">
+              <img src="./svg/github.svg" alt=""> </a>
+            <a class="iconBox "
+              href="https://www.linkedin.com/in/bhuvan-bhattarai-a00413322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank" rel="noopener noreferrer">
+              <img src="./svg/linkedIn.svg" alt=""></a>
+            <a class="iconBox " href="#">
+              <img src="./svg/email.svg" alt=""></a>
+            <a class="iconBox  " href="https://x.com/bhuvan_365" target="_blank" rel="noopener noreferrer">
+              <img src="./svg/x.svg" alt=""></a>
+          </div>
+          <p class="copyright">© 2025 Graphy. All rights reserved.</p>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-column">
+            <h4>Quick link</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#project">Project</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Contact us</h4>
+            <ul>
+              <li> Kathmandu, Nepal</li>
+              <li> +123-456-789</li>
+              <li> bhuvanbhattarai07@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookies Settings</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
