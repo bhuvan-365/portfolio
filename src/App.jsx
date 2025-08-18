@@ -52,14 +52,12 @@ function App() {
           <section id="about">
             <About />
           </section>
-          <div className="flex flex-col justify-center items-center gap-10">
             <section id="skills">
               <Skills />
             </section>
             <section id="project">
               <Project />
             </section>
-          </div>
           <section id="contact">
             <Contact />
           </section>

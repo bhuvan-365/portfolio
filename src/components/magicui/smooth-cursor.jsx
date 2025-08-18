@@ -62,18 +62,21 @@ const DefaultCursorSVG = () => {
         </filter>
       </defs>
     </svg>
+
   );
 };
 
-export function SmoothCursor({
-  cursor = <DefaultCursorSVG />,
-  springConfig = {
-    damping: 45,
-    stiffness: 400,
-    mass: 1,
-    restDelta: 0.001,
-  },
-}) {
+export function SmoothCursor({ cursor = <DefaultCursorSVG />, springConfig = { damping: 45, stiffness: 400, mass: 1, restDelta: 0.001 } }) {
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  // Update isDesktop based on window width
+  useEffect(() => {
+    const checkWidth = () => setIsDesktop(window.innerWidth > 640); // >640px = show cursor
+    checkWidth();
+    window.addEventListener("resize", checkWidth);
+    return () => window.removeEventListener("resize", checkWidth);
+  }, []);
+
   const lastMousePos = useRef({ x: 0, y: 0 });
   const velocity = useRef({ x: 0, y: 0 });
   const lastUpdateTime = useRef(Date.now());
@@ -82,18 +85,12 @@ export function SmoothCursor({
 
   const cursorX = useSpring(0, springConfig);
   const cursorY = useSpring(0, springConfig);
-  const rotation = useSpring(0, {
-    ...springConfig,
-    damping: 60,
-    stiffness: 300,
-  });
-  const scale = useSpring(1, {
-    ...springConfig,
-    stiffness: 500,
-    damping: 35,
-  });
+  const rotation = useSpring(0, { ...springConfig, damping: 60, stiffness: 300 });
+  const scale = useSpring(1, { ...springConfig, stiffness: 500, damping: 35 });
 
   useEffect(() => {
+    if (!isDesktop) return;
+
     const updateVelocity = (currentPos) => {
       const currentTime = Date.now();
       const deltaTime = currentTime - lastUpdateTime.current;
@@ -113,19 +110,13 @@ export function SmoothCursor({
       const currentPos = { x: e.clientX, y: e.clientY };
       updateVelocity(currentPos);
 
-      const speed = Math.sqrt(
-        velocity.current.x ** 2 + velocity.current.y ** 2
-      );
+      const speed = Math.sqrt(velocity.current.x ** 2 + velocity.current.y ** 2);
 
       cursorX.set(currentPos.x);
       cursorY.set(currentPos.y);
 
       if (speed > 0.1) {
-        const currentAngle =
-          Math.atan2(velocity.current.y, velocity.current.x) *
-            (180 / Math.PI) +
-          90;
-
+        const currentAngle = Math.atan2(velocity.current.y, velocity.current.x) * (180 / Math.PI) + 90;
         let angleDiff = currentAngle - previousAngle.current;
         if (angleDiff > 180) angleDiff -= 360;
         if (angleDiff < -180) angleDiff += 360;
@@ -134,11 +125,7 @@ export function SmoothCursor({
         previousAngle.current = currentAngle;
 
         scale.set(0.95);
-
-        const timeout = setTimeout(() => {
-          scale.set(1);
-        }, 150);
-
+        const timeout = setTimeout(() => scale.set(1), 150);
         return () => clearTimeout(timeout);
       }
     };
@@ -160,7 +147,9 @@ export function SmoothCursor({
       document.body.style.cursor = "auto";
       if (rafId) cancelAnimationFrame(rafId);
     };
-  }, [cursorX, cursorY, rotation, scale]);
+  }, [isDesktop, cursorX, cursorY, rotation, scale]);
+
+  if (!isDesktop) return null;
 
   return (
     <motion.div
@@ -178,11 +167,7 @@ export function SmoothCursor({
       }}
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
-      transition={{
-        type: "spring",
-        stiffness: 400,
-        damping: 30,
-      }}
+      transition={{ type: "spring", stiffness: 400, damping: 30 }}
     >
       {cursor}
     </motion.div>

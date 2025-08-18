@@ -26,7 +26,7 @@ const Navbar = ({ activeSection }) => {
   }, [lastScrollY]);
 
   return (
-    <nav ref={navRef} className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+    <nav ref={navRef} className="fixed top-0 left-0 !w-[100%] overflow-hidden z-50 bg-white shadow-md">
       <div className="name">Bhuvan.dev</div>
 
       <div className="toggle">
