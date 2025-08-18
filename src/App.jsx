@@ -6,8 +6,7 @@ import Project from "./components/project";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
-import {Lens} from "./components/magicui/lens"
-
+import LenisScroll from "./components/LenisScroll";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -40,32 +39,34 @@ function App() {
 
   return (
     <>
-      <Navbar activeSection={activeSection} />
+      <LenisScroll>
+        <Navbar activeSection={activeSection} />
 
-      <main>
-      
-        <section id="home">
-          <Home />
-        </section>
-        
+        <main>
 
-        <section id="about">
-          <About />
-        </section>
-<div className="flex flex-col justify-center items-center gap-10">
-        <section id="skills">
-          <Skills />
-        </section>
-        <section id="project">
-          <Project />
-        </section>
-</div>
-        <section id="contact">
-          <Contact />
-        </section>
-      </main>
+          <section id="home">
+            <Home />
+          </section>
 
-      <Footer />
+
+          <section id="about">
+            <About />
+          </section>
+          <div className="flex flex-col justify-center items-center gap-10">
+            <section id="skills">
+              <Skills />
+            </section>
+            <section id="project">
+              <Project />
+            </section>
+          </div>
+          <section id="contact">
+            <Contact />
+          </section>
+        </main>
+
+        <Footer />
+      </LenisScroll>
     </>
   );
 }
