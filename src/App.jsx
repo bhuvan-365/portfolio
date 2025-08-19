@@ -42,7 +42,7 @@ function App() {
       <LenisScroll>
         <Navbar activeSection={activeSection} />
 
-        <main>
+        {/* <main className="flex justify-center items-center gap-1 flex-col !max-w-100"> */}
 
           <section id="home">
             <Home />
@@ -61,9 +61,10 @@ function App() {
           <section id="contact">
             <Contact />
           </section>
-        </main>
+        
 
         <Footer />
+        {/* </main> */}
       </LenisScroll>
     </>
   );
