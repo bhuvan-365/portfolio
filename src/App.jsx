@@ -44,7 +44,7 @@ function App() {
 
         {/* <main className="flex justify-center items-center gap-1 flex-col !max-w-100"> */}
 
-          <section id="home">
+          <section id="home" className="overflow-hidden">
             <Home />
           </section>
 

@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
 
             <div className="footer-right">
-              <div className="footer-column">
+              <div className="footer-column hidden sm:block">
                 <h4>Quick Links</h4>
                 <ul>
                   <li><a href="#home">Home</a></li>
