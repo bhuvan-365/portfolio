@@ -151,7 +151,7 @@ const Home = () => {
           <p className="text-lg">
             I'm a frontend developer based in Kathmandu, Nepal, passionate about crafting
             responsive and user-friendly web interfaces. I specialize in HTML, CSS,
-            JavaScript, React.js, Redux, Tailwind CSS, and Bootstrap.
+            JavaScript, React.js, Next.jx, Redux, Tailwind CSS, and Bootstrap.
           </p>
           <div className="btns">
             <a href="/resume/Bhuvan_Bhattarai_resume00.pdf" className="btn !text-xs !py-3 !px-4" download>

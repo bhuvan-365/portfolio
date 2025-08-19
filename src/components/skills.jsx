@@ -57,15 +57,15 @@ const Skills = () => {
 
   return (
     <>
-      <Seo 
+      <Seo
         title="Skills of Bhuvan Bhattarai | Web Developer | Best Portfolio in Nepal"
         description="Discover the professional skills of Bhuvan Bhattarai — web development, React, JavaScript, and more. Highlighting one of the best portfolio websites in Nepal."
         keywords="Bhuvan Bhattarai, Bhuvan, Bhattarai Bhuvan, Best Portfolio in Nepal, Web Developer Skills, React, JavaScript, Portfolio Website"
       />
 
       <section className='skills-section !min-h-fit !w-full !px-4 sm:!px-6 lg:!px-8 !py-8 md:!py-12 !mb-8 md:!mb-12 !overflow-hidden'>
-        <h2 
-          ref={headingRef} 
+        <h2
+          ref={headingRef}
           className='!font-semibold !text-2xl sm:!text-3xl md:!text-4xl lg:!text-5xl !text-center !mb-6 md:!mb-10 !text-gray-800'
         >
           Skills & Tools
@@ -107,6 +107,9 @@ const Skills = () => {
                 <div className="tags !flex !flex-wrap !gap-2 sm:!gap-3 !mt-3">
                   <span className="tag !flex !items-center !gap-2 !text-xs sm:!text-sm md:!text-base !px-3 !py-1.5 sm:!py-2 !rounded-lg !bg-gray-50 !border !border-gray-200 hover:!bg-gray-100 !transition-colors !duration-200">
                     <img src="./image/react.svg" alt="React icon" className="!w-4 !h-4 sm:!w-5 sm:!h-5" /> React.js
+                  </span>
+                  <span className="tag !flex !items-center !gap-2 !text-xs sm:!text-sm md:!text-base !px-3 !py-1.5 sm:!py-2 !rounded-lg !bg-gray-50 !border !border-gray-200 hover:!bg-gray-100 !transition-colors !duration-200">
+                    <img src="./image/next.png" alt="React icon" className="!w-4 !h-4 sm:!w-5 sm:!h-5" /> Next.js
                   </span>
                   <span className="tag !flex !items-center !gap-2 !text-xs sm:!text-sm md:!text-base !px-3 !py-1.5 sm:!py-2 !rounded-lg !bg-gray-50 !border !border-gray-200 hover:!bg-gray-100 !transition-colors !duration-200">
                     <img src="./image/redux.svg" alt="Redux icon" className="!w-4 !h-4 sm:!w-5 sm:!h-5" /> Redux
@@ -156,9 +159,9 @@ const Skills = () => {
                 </h3>
                 <ul className="cert-list !mt-3 !space-y-2">
                   <li className='!text-sm sm:!text-base md:!text-lg !text-blue-600 hover:!text-blue-800 !transition-colors !duration-200'>
-                    <a 
-                      href="https://www.freecodecamp.org/certification/bhuvanbhattarai/responsive-web-design" 
-                      target="_blank" 
+                    <a
+                      href="https://www.freecodecamp.org/certification/bhuvanbhattarai/responsive-web-design"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className='hover:!underline'
                     >
@@ -172,11 +175,11 @@ const Skills = () => {
 
           {/* Icon Cloud */}
           <div className='hidden xs:block'>
-          <div className=' icon-cloud-container !w-full lg:!w-1/2 !flex !justify-center !items-center !mt-6 lg:!mt-0 !px-4 sm:!px-6  '>
-            <div className='!w-full !max-w-md lg:!max-w-lg !aspect-square  '>
-              <IconCloud images={iconImages} />
+            <div className=' icon-cloud-container !w-full lg:!w-1/2 !flex !justify-center !items-center !mt-6 lg:!mt-0 !px-4 sm:!px-6  '>
+              <div className='!w-full !max-w-md lg:!max-w-lg !aspect-square  '>
+                <IconCloud images={iconImages} />
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </section>

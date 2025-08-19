@@ -97,7 +97,7 @@ const About = () => {
                     <p className="abtp1 !text-[1rem]">
                       I’m Bhuvan Bhattarai, a self-driven frontend developer from Kathmandu,
                       Nepal. I love turning ideas into responsive, user-friendly websites using
-                      React.js, Redux, Tailwind CSS, and JavaScript. My goal is to build clean,
+                      React.js,Next.js, Redux, Tailwind CSS, and JavaScript. My goal is to build clean,
                       functional, and visually appealing web experiences.
                       <br />
                       <br />

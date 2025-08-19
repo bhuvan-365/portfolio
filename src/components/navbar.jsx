@@ -56,26 +56,23 @@ const Navbar = ({ activeSection }) => {
         onClick={toggleMenu}
       >
         <span
-          className={`block h-0.5 w-8 bg-gray-800 rounded transition-all duration-300 ${
-            isMenuOpen ? "rotate-45 translate-y-3" : ""
-          }`}
+          className={`block h-0.5 w-8 bg-gray-800 rounded transition-all duration-300 ${isMenuOpen ? "rotate-45 translate-y-3" : ""
+            }`}
         ></span>
         <span
-          className={`block h-0.5 w-8 bg-gray-800 rounded transition-all duration-300 ${
-            isMenuOpen ? "opacity-0" : ""
-          }`}
+          className={`block h-0.5 w-8 bg-gray-800 rounded transition-all duration-300 ${isMenuOpen ? "opacity-0" : ""
+            }`}
         ></span>
         <span
-          className={`block h-0.5 w-8 bg-gray-800 rounded transition-all duration-300 ${
-            isMenuOpen ? "-rotate-45 -translate-y-3" : ""
-          }`}
+          className={`block h-0.5 w-8 bg-gray-800 rounded transition-all duration-300 ${isMenuOpen ? "-rotate-45 -translate-y-3" : ""
+            }`}
         ></span>
       </button>
 
       {/* Navigation Items */}
       <div
         ref={navItemRef}
-        className="fixed md:static top-0 right-[-100%] w-[70vw] md:w-auto h-fit bg-white 
+        className="fixed md:static top-0 right-[-100%] w-[70vw] md:w-auto h-fit bg-white md:bg-transparent
                    pt-20 md:pt-0 px-5 md:px-0 shadow-lg md:shadow-none transition-all duration-300 
                    ease-in-out rounded-lg"
       >
@@ -84,11 +81,10 @@ const Navbar = ({ activeSection }) => {
             <li key={section}>
               <a
                 href={`#${section}`}
-                className={`text-lg hover:text-orange-500 transition-colors ${
-                  activeSection === section
+                className={`text-lg hover:text-orange-500 transition-colors ${activeSection === section
                     ? "text-orange-500 border-b-2 border-orange-500"
                     : "text-gray-800"
-                }`}
+                  }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {section.charAt(0).toUpperCase() + section.slice(1)}
