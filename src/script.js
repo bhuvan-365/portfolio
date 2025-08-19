@@ -7,7 +7,7 @@ sendBtns.forEach(btn => {
     });
 });
 
-// Animation on view functionality
+
 function animateOnView(selector, animationClass) {
     const elements = document.querySelectorAll(selector);
 
