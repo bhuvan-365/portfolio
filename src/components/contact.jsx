@@ -52,8 +52,8 @@ const Contact = () => {
         description="Get in touch with Bhuvan Bhattarai — web developer from Nepal. Reach out for collaborations, projects, or portfolio inquiries."
         keywords="Bhuvan Bhattarai, Bhuvan, Bhattarai Bhuvan, Contact Bhuvan Bhattarai, Best Portfolio in Nepal, Web Developer Nepal"
       />
-      <section className="contact-section !w-full !max-w-[100vw] !overflow-x-hidden !py-8 !px-4 sm:!px-6 lg:!px-8">
-        <div className="container !mx-auto !max-w-7xl !px-4 sm:!px-6 lg:!px-8">
+      <section className="contact-section !w-full !max-w-[100vw] !overflow-x-hidden !py-8 !px-0 sm:!px-6 lg:!px-8">
+        <div className="container !mx-auto w-full !sm:max-w-7xl !px-0 sm:!px-6 lg:!px-8">
           <div className="top-buttons !flex !justify-center !mb-8">
             <button className="contact-btn !flex !items-center !gap-2 !px-6 !py-3 ">
               <img 
@@ -64,7 +64,7 @@ const Contact = () => {
               Contact Me
             </button>
           </div>
-          <div className="main !px-6 md:px-10 !flex !flex-col lg:!flex-row !gap-8">
+          <div className="main !px-0 !sm:px-10 !flex !flex-col lg:!flex-row !gap-8">
             {/* Left content */}
             <div 
               className="social-links !w-full lg:!w-1/2" 

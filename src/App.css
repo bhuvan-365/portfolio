@@ -729,8 +729,6 @@ a.btn:active,a.btn:visited,a.btn:focus{
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
-    padding-left: 10vw;
-    padding-right: 10vw;
 }
 
 .social-links {
