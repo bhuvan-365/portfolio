@@ -32,7 +32,7 @@ const TestPage = () => {
                     </p>
                     <br/> 
                     <br/> 
-                    <div className="bg-gradient-to-br from-blue-900/40 to-cyan-900/40 p-6 sm:p-8 rounded-lg border border-blue-700/50 backdrop-blur-sm">
+                    <div className="bg-gradient-to-br from-blue-900/40 to-cyan-900/40 p-6 !sm:p-8 rounded-lg border border-blue-700/50 backdrop-blur-sm">
                         <h3 className="font-bold text-xl mb-4 text-blue-300">⭐ Key Features:</h3>
                         <ul className="grid gap-3 text-gray-200">
                             <li className="flex items-start gap-3">
