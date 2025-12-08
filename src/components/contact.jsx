@@ -1,4 +1,4 @@
-import React, { useRef, useLayoutEffect } from "react";
+import React, { useRef, useLayoutEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Seo from "./seo";
@@ -8,6 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Contact = () => {
   const leftRef = useRef(null);
   const rightRef = useRef(null);
+  const [result, setResult] = useState("");
 
   useLayoutEffect(() => {
     const leftAnim = gsap.from(leftRef.current, {
@@ -44,6 +45,30 @@ const Contact = () => {
     e.preventDefault();
     alert("Error while sending, please try another method");
   }
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    formData.append("access_key", "e6b25213-b6fa-409f-8480-4734c907a150");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        setResult("Success! Your message has been sent.");
+        event.target.reset();
+        setTimeout(() => setResult(""), 3000);
+      } else {
+        setResult("Error sending message. Please try again.");
+      }
+    } catch (error) {
+      setResult("Error sending message. Please try again.");
+    }
+  };
 
   return (
     <>
@@ -142,31 +167,39 @@ const Contact = () => {
               <h3 className="!text-2xl !font-semibold !mb-6 !text-gray-800">
                 Send Me a Message
               </h3>
-              <form className="!flex !flex-col !gap-4">
+              <form className="!flex !flex-col !gap-4" onSubmit={onSubmit}>
                 <input
                   type="text"
+                  name="name"
                   placeholder="Your Name"
                   required
                   className="!w-full !p-3 "
                 />
                 <input
                   type="email"
+                  name="email"
                   placeholder="Your Email"
                   required
                   className="!w-full !p-3 "
                 />
                 <textarea
+                  name="message"
                   placeholder="Your Message"
                   rows="5"
                   required
                   className="!w-full !p-3 "
                 />
                 <button
-                  className="button-86 sendbtn  !p-3 "onClick={handelclick}
+                  className="button-86 sendbtn  !p-3 "
                   type="submit"
                 >
                   Send ➤
                 </button>
+                {result && (
+                  <p className={`!text-center !font-semibold ${result.includes("Success") ? "!text-green-600" : "!text-red-600"}`}>
+                    {result}
+                  </p>
+                )}
               </form>
             </div>
           </div>
