@@ -182,6 +182,13 @@ const Contact = () => {
                   required
                   className="!w-full !p-3 "
                 />
+                <input
+                  type="text"
+                  name="Address"
+                  placeholder="Your Address"
+                  required
+                  className="!w-full !p-3 "
+                />
                 <textarea
                   name="message"
                   placeholder="Your Message"
