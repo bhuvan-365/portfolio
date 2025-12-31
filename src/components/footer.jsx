@@ -75,7 +75,7 @@ const Footer = () => {
                 <h4>Contact Info</h4>
                 <ul>
                   <li>Kathmandu, Nepal</li>
-                  <li>+123-456-789</li>
+                  {/* <li>+123-456-789</li> */}
                   <li>bhuvanbhattarai07@gmail.com</li>
                 </ul>
               </div>
