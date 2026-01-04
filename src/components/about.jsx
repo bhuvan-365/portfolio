@@ -62,7 +62,7 @@ const About = () => {
 
   return (
     <>
-      <Seo 
+      <Seo
         title="About Bhuvan Bhattarai | Web Developer in Nepal"
         description="Learn more about Bhuvan Bhattarai — skills, experience, and journey as a web developer in Nepal. One of the top portfolio websites in Nepal."
         keywords="Bhuvan Bhattarai, Bhuvan, Bhattarai Bhuvan, About Bhuvan Bhattarai, Web Developer Nepal, Portfolio Website"
@@ -95,15 +95,19 @@ const About = () => {
                       Who Am I
                     </h3>
                     <p className="abtp1 !text-[1rem]">
-                      I’m Bhuvan Bhattarai, a self-driven frontend developer from Kathmandu,
-                      Nepal. I love turning ideas into responsive, user-friendly websites using
-                      React.js,Next.js, Redux, Tailwind CSS, and JavaScript. My goal is to build clean,
-                      functional, and visually appealing web experiences.
+                      I’m Bhuvan Bhattarai, a passionate frontend developer from Kathmandu,
+                      Nepal, with over 6 months of hands-on experience building responsive and
+                      user-friendly web interfaces. I specialize in modern technologies like
+                      React.js, Redux, Zustand, Tailwind CSS, Bootstrap, and TypeScript to create
+                      clean, interactive, and high-performance applications.
                       <br />
                       <br />
-                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; I’m certified by freeCodeCamp for
-                      completing over 600 hours of hands-on training in JavaScript and Web Design.
+                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Currently, I’m expanding into the
+                      MERN stack with working knowledge of Node.js and Express.js, while serving
+                      as a Website Administrative Lead, managing website operations and delivering
+                      scalable, intuitive digital solutions aligned with user and business goals.
                     </p>
+
                   </div>
                 </div>
 

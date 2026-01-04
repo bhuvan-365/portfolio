@@ -135,19 +135,19 @@ if (ham && navItem) {
 
     ham.addEventListener("click", () => {
 
- navItem.style.right = isOpen ? "-100%" : "0%";
+        navItem.style.right = isOpen ? "-100%" : "0%";
 
 
-           isOpen = !isOpen;
-           if(hamImg){
-            hamImg.src =isOpen? "./svg/cross.svg":"./svg/hamburger.svg";
-           }
+        isOpen = !isOpen;
+        if (hamImg) {
+            hamImg.src = isOpen ? "./svg/cross.svg" : "./svg/hamburger.svg";
+        }
     })
 }
 
 const typingTarget = document.querySelector('.p1 .write');
 if (typingTarget) {
-    const textToType = 'Front End Developer';
+    const textToType = 'Front-End & Back-End Developer';
     let i = 0;
     function typeWriter() {
         typingTarget.innerHTML = textToType.slice(0, i) + '<span class="typing-cursor">|</span>';

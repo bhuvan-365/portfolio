@@ -15,7 +15,7 @@ const Home = () => {
 
   const [animationComplete, setAnimationComplete] = useState(false);
   const typingInterval = useRef(null);
-  const fullText = "Front End Developer";
+  const fullText = "Front-End & Back-End Developer";
 
   useLayoutEffect(() => {
     return () => {
@@ -115,7 +115,7 @@ const Home = () => {
 
   return (
     <>
-      <Seo 
+      <Seo
         title="Bhuvan Bhattarai | Best Portfolio in Nepal"
         description="Official portfolio of Bhuvan Bhattarai — showcasing projects, skills, and achievements. Recognized as one of the best portfolio websites in Nepal."
         keywords="Bhuvan Bhattarai, Bhuvan, Bhattarai Bhuvan, Best Portfolio in Nepal, Portfolio Website"
@@ -149,12 +149,10 @@ const Home = () => {
             </p>
           </div>
           <p className="text-lg">
-            I'm a frontend developer based in Kathmandu, Nepal, passionate about crafting
-            responsive and user-friendly web interfaces. I specialize in HTML, CSS,
-            JavaScript, React.js, Next.jx, Redux, Tailwind CSS, and Bootstrap.
+            I’m a frontend and backend developer based in Kathmandu, Nepal, focused on building responsive, user-friendly web experiences. I work withReact.JS, Next.JS, TypeScript, Zustand, Redux, Tailwindcss, Bootstrap, GSAP , JavaScript, CSS, HTML and I’m expanding into the MERN stack with Node.js and Express.
           </p>
           <div className="btns">
-            <a href="/resume/Bhuvan_Bhattarai_resume00.pdf" className="btn !text-xs !py-3 !px-4" download>
+            <a href="/resume/Bhuvan_Bhattarai_resume.pdf" className="btn !text-xs !py-3 !px-4" download>
               Download CV
             </a>
             <a href="#contact">

@@ -9,7 +9,7 @@ import Contact from "./components/contact";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 import LenisScroll from "./components/LenisScroll";
-import Zustand from "./pages/zustand"; // ✅ your Zustand guide page
+import Zustand from "./pages/zustand"; 
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
