@@ -44,7 +44,7 @@ const Project = () => {
 
   return (
     <>
-      <Seo 
+      <Seo
         title="Projects by Bhuvan Bhattarai | Portfolio Website Nepal"
         description="Explore the web development projects by Bhuvan Bhattarai. Showcasing one of the best portfolio websites in Nepal."
         keywords="Bhuvan Bhattarai, Bhuvan, Bhattarai Bhuvan, Best Portfolio in Nepal, Portfolio Projects, Web Developer Nepal"
@@ -54,51 +54,20 @@ const Project = () => {
         <h1 ref={headingRef} className='!text-4xl !font-semibold'>
           My Latest Project
         </h1>
-
-        <div className="project project1">
-          <div className="text">
-            <h2>Spotify Clone</h2>
-            <p>A functional Spotify clone built with HTML, CSS, and JavaScript. This project features core music player
-              controls like play, pause, next/previous, and volume adjustment. It dynamically fetches songs, playlists, and
-              albums from local storage and displays them in a clean, interactive library UI. This project showcases my
-              skills in media handling, responsive UI design, and building real-world web app experiences.</p>
-            <div className="project-bottom">
-              <div className="repo button">
-                <a href="https://github.com/bhuvan-365/Spotify-clone" target="_blank" rel="noopener noreferrer">
-                  <img src="./svg/github.svg" alt="GitHub repository for Spotify Clone by Bhuvan Bhattarai" />
-                  <div> Git Repo </div>
-                </a>
-              </div>
-
-              <div className="repo button">
-                <a href="https://www.linkedin.com/posts/bhuvan-bhattarai-a00413322_webdevelopment-javascript-frontend-activity-7347248845321359362-86Pa?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFGTOuAB1X11hIarLglrI1sVM1nT3ZaJGNk" target="_blank" rel="noopener noreferrer">
-                  <img src="./svg/live.svg" alt="Live demo of Spotify Clone project by Bhuvan Bhattarai" />
-                  <div> Live </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="image !min-w-sm">
-            <img src="./projectImg/spotify.png" alt="Spotify Clone project by Bhuvan Bhattarai portfolio Nepal" />
-          </div>
-        </div>
-
         <div className="project project2">
           <div className="text">
-            <h2>Doozie – Simple Task Manager App (React.js)</h2>
-            <p>Doozie is a lightweight and intuitive task management app built with React.js. Users can add and organize
-              tasks, and once completed or deleted, tasks are stored in a history section using local storage for future
-              reference.</p>
+            <h2>Great Taste – Luxury Restaurant (Client Project)</h2>
+            <p>A high-end, luxury restaurant website developed as a real-world freelance project for a client. The website reflects a premium brand identity through elegant visuals, smooth animations, and a refined user experience. It features an immersive layout, interactive sections, and seamless navigation designed to showcase the restaurant’s atmosphere, menu, and overall dining experience.  <br /><strong>Tool Used:</strong> React.js, GSAP, Lenis, Modern CSS & JavaScript</p>
             <div className="project-bottom">
               <div className="repo button">
-                <a href="https://github.com/bhuvan-365/Doozie-a-taskflow-web-app-" target="_blank" rel="noopener noreferrer">
-                  <img src="./svg/github.svg" alt="GitHub repository for Doozie Task Manager by Bhuvan Bhattarai" />
+                <a href="#" onClick={(e) => { e.preventDefault(); alert('This is a Client Project. The repo is private due to confidentiality concerns. Please check out my other projects!'); }}>
+                  <img src="./svg/github.svg" alt="GitHub repository for Great Taste – Luxury Restaurant by Bhuvan Bhattarai" />
                   <div> Git Repo </div>
                 </a>
               </div>
 
               <div className="repo button">
-                <a href="https://doozie-365.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <a href="https://dur-bar.vercel.app/" target="_blank" rel="noopener noreferrer">
                   <img src="./svg/live.svg" alt="Live demo of Doozie Task Manager project by Bhuvan Bhattarai" />
                   <div> Live </div>
                 </a>
@@ -106,64 +75,89 @@ const Project = () => {
             </div>
           </div>
           <div className="image !min-w-sm">
-            <img src="./projectImg/react.png" alt="Doozie React task manager project by Bhuvan Bhattarai" />
+            <img src="./newProject/durbar.png" alt="Great Taste – Luxury Restaurant Website (Freelance Client Project) by Bhuvan Bhattarai" />
           </div>
         </div>
 
         <div className="project project3">
           <div className="text">
-            <h2>ShopVerse – Multi-Template eCommerce UI (Bootstrap)</h2>
-            <p>ShopVerse is a modern and responsive eCommerce website demo built using Bootstrap. It features clean layouts
-              for product overviews, homepage banners, category sections, and a polished navigation system. With multiple
-              page templates and a focus on design consistency.</p>
+            <h2>EcomX – Modern E-Commerce Web Application</h2>
+            <p>
+              A modern e-commerce web application built to deliver a smooth and engaging shopping experience. The project features a clean, high-end UI with fluid animations, interactive product sections, and intuitive navigation designed to enhance user engagement and usability. Smooth scrolling and motion effects create an app-like feel, while efficient state management ensures responsive interactions across the platform.  <br />
+              <strong>Tools Used: </strong> TypeScript, Next.js, GSAP, Lenis, Zustand, Embla Carousel, CSS</p>
             <div className="project-bottom">
               <div className="repo button">
-                <a href="https://github.com/bhuvan-365/bootstrap-doc" target="_blank" rel="noopener noreferrer">
-                  <img src="./svg/github.svg" alt="GitHub repository for ShopVerse eCommerce project by Bhuvan Bhattarai" />
+                <a href="https://github.com/bhuvan-365/ecommerce-site" target="_blank" rel="noopener noreferrer">
+                  <img src="./svg/github.svg" alt="GitHub repository for EcomX – Modern E-Commerce Web Application project by Bhuvan Bhattarai" />
                   <div> Git Repo </div>
                 </a>
               </div>
 
               <div className="repo button">
-                <a href="https://ecomwithbootstrap.netlify.app/" target="_blank" rel="noopener noreferrer">
-                  <img src="./svg/live.svg" alt="Live demo of ShopVerse eCommerce project by Bhuvan Bhattarai" />
+                <a href="https://ecommerce-site-murex-tau.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  <img src="./svg/live.svg" alt="Live demo of EcomX – Modern E-Commerce Web Application project by Bhuvan Bhattarai" />
                   <div> Live </div>
                 </a>
               </div>
             </div>
           </div>
           <div className="image !min-w-sm">
-            <img src="./projectImg/bootstrapEcom.png" alt="ShopVerse eCommerce Bootstrap project by Bhuvan Bhattarai" />
+            <img src="./newProject/ecom.png" alt="EcomX – Modern E-Commerce Web Application by Bhuvan Bhattarai" />
           </div>
         </div>
 
         <div className="project project4">
           <div className="text">
-            <h2>Go Explorer – Mountain Discovery UI</h2>
-            <p>Go Explorer is a visually rich web project focused on showcasing breathtaking mountain images and their
-              details. Built with a strong emphasis on UI design and smooth animations, it offers a simple yet engaging
-              experience for users to explore different mountains. This project highlights my skills in layout design,
-              animation effects, and creating immersive interfaces with clean, responsive visuals.</p>
+            <h2>K72 – Animated Website Replica (Inspiration Project)</h2>
+            <p>An animation-focused website clone inspired by K72, built to study and replicate high-end motion design and interactive layouts. The project emphasizes smooth transitions, scroll-based animations, and precise visual timing to recreate a premium browsing experience. It demonstrates my ability to reverse-engineer complex UI interactions, implement advanced animations, and build visually rich interfaces using modern frontend tools.
+              <br /><strong>Tools Used:</strong> React.js, GSAP, Lenis, Modern CSS & JavaScript
+            </p>
             <div className="project-bottom">
               <div className="repo button">
-                <a href="https://github.com/bhuvan-365/mountain-website-365" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/bhuvan-365/K72.ca" target="_blank" rel="noopener noreferrer">
                   <img src="./svg/github.svg" alt="GitHub repository for Go Explorer project by Bhuvan Bhattarai" />
                   <div> Git Repo </div>
                 </a>
               </div>
 
               <div className="repo button">
-                <a href="https://mountains-365.netlify.app/" target="_blank" rel="noopener noreferrer">
-                  <img src="./svg/live.svg" alt="Live demo of Go Explorer mountain discovery project by Bhuvan Bhattarai" />
+                <a href="https://k72-ca-beryl.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  <img src="./svg/live.svg" alt="Live demo of K72 project by Bhuvan Bhattarai" />
                   <div> Live </div>
                 </a>
               </div>
             </div>
           </div>
           <div className="image !min-w-sm">
-            <img src="./projectImg/mountains.png" alt="Go Explorer mountain discovery UI by Bhuvan Bhattarai" />
+            <img src="./newProject/k72.png" alt="K72 by Bhuvan Bhattarai" />
           </div>
-        </div>  
+        </div>
+        <div className="project project1">
+          <div className="text">
+            <h2>Trekking Hero – Animated Hero Section for Travel Websites</h2>
+            <p>A visually engaging hero section designed specifically for trekking and adventure travel websites. The project focuses on impactful first impressions through bold typography, immersive visuals, and smooth motion effects. Carefully crafted animations enhance user attention while maintaining performance and responsiveness across devices.
+              <br /><strong>Tools Used:</strong> Next.js, GSAP, Modern JavaScript
+            </p>
+            <div className="project-bottom">
+              <div className="repo button">
+                <a href="https://github.com/bhuvan-365/hero-trekking2" target="_blank" rel="noopener noreferrer">
+                  <img src="./svg/github.svg" alt="GitHub repository for Trekking Hero – Animated Hero Section for Travel Websites by Bhuvan Bhattarai" />
+                  <div> Git Repo </div>
+                </a>
+              </div>
+
+              <div className="repo button">
+                <a href="https://hero-trekking2.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  <img src="./svg/live.svg" alt="Live demo of Trekking Hero – Animated Hero Section for Travel Websites by Bhuvan Bhattarai" />
+                  <div> Live </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="image !min-w-sm">
+            <img src="./newProject/herosection.png" alt="Spotify Clone project by Bhuvan Bhattarai portfolio Nepal" />
+          </div>
+        </div>
       </section>
     </>
   )

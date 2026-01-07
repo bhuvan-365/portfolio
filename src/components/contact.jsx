@@ -49,7 +49,7 @@ const Contact = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
-    formData.append("access_key", "e6b25213-b6fa-409f-8480-4734c907a150");
+    formData.append("access_key", import.meta.env.VITE_WEB3FORMS_KEY);
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -81,9 +81,9 @@ const Contact = () => {
         <div className="container !mx-auto w-full !sm:max-w-7xl !px-0 sm:!px-6 lg:!px-8">
           <div className="top-buttons !flex !justify-center !mb-8">
             <button className="contact-btn !flex !items-center !gap-2 !px-6 !py-3 ">
-              <img 
-                src="./svg/contact.svg" 
-                alt="Contact Bhuvan Bhattarai" 
+              <img
+                src="./svg/contact.svg"
+                alt="Contact Bhuvan Bhattarai"
                 className="!w-5 !h-5"
               />
               Contact Me
@@ -91,8 +91,8 @@ const Contact = () => {
           </div>
           <div className="main !px-0 !sm:px-10 !flex !flex-col lg:!flex-row !gap-8">
             {/* Left content */}
-            <div 
-              className="social-links !w-full lg:!w-1/2" 
+            <div
+              className="social-links !w-full lg:!w-1/2"
               ref={leftRef}
             >
               <a
@@ -101,9 +101,9 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img 
-                  src="./svg/github.svg" 
-                  alt="Bhuvan Bhattarai GitHub profile" 
+                <img
+                  src="./svg/github.svg"
+                  alt="Bhuvan Bhattarai GitHub profile"
                   className="!w-10 !h-10"
                 />
                 <div>
@@ -160,8 +160,8 @@ const Contact = () => {
             </div>
 
             {/* Right content */}
-            <div 
-              className="contact-form !w-full lg:!w-1/2" 
+            <div
+              className="contact-form !w-full lg:!w-1/2"
               ref={rightRef}
             >
               <h3 className="!text-2xl !font-semibold !mb-6 !text-gray-800">

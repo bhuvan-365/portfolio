@@ -149,7 +149,7 @@ const Home = () => {
             </p>
           </div>
           <p className="text-lg">
-            I’m a frontend and backend developer based in Kathmandu, Nepal, focused on building responsive, user-friendly web experiences. I work withReact.JS, Next.JS, TypeScript, Zustand, Redux, Tailwindcss, Bootstrap, GSAP , JavaScript, CSS, HTML and I’m expanding into the MERN stack with Node.js and Express.
+            I’m a frontend and backend developer based in Kathmandu, Nepal, focused on building responsive, user-friendly web experiences. I work with React.JS, Next.JS, TypeScript, Zustand, Redux, Tailwindcss, Bootstrap, GSAP , JavaScript, CSS, HTML and I’m expanding into the MERN stack with Node.js and Express.
           </p>
           <div className="btns">
             <a href="/resume/Bhuvan_Bhattarai_resume.pdf" className="btn !text-xs !py-3 !px-4" download>

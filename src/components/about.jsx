@@ -81,7 +81,7 @@ const About = () => {
               <div className="leftbox">
                 <div className="gallery">
                   <img src="./image/sir.jpg" alt="Bhuvan Bhattarai professional portrait" />
-                  <img src="./image/pp.jpg" alt="Bhuvan Bhattarai casual photo" />
+                  <img src="./image/Bhuvan-Bhattarai.jpg" alt="Bhuvan Bhattarai photo" />
                 </div>
               </div>
             </div>
