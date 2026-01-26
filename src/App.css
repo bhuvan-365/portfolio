@@ -1137,6 +1137,23 @@ a.btn:active,a.btn:visited,a.btn:focus{
         background-color: #e2dadaab;
     }
 
+    .project1,
+    .project2,
+    .project3,
+    .project4 {
+        position: static;
+        top: auto;
+    }
+
+    .project {
+        overflow: visible;
+    }
+
+    .project-bottom {
+        flex-wrap: wrap;
+        row-gap: 8px;
+    }
+
     .line2 {
         min-width: 150px;
     }
@@ -1179,10 +1196,21 @@ a.btn:active,a.btn:visited,a.btn:focus{
     }
 
     .project-bottom {
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
+        align-items: stretch;
         justify-content: center;
-        gap: 10px;
+        gap: 8px;
+    }
+
+    .repo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .repo a {
+        width: 100%;
+        justify-content: center;
     }
 
     .top-buttons {
