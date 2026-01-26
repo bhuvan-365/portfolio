@@ -53,6 +53,7 @@ const Skills = () => {
     './image/vercel.webp',
     './image/figma.svg',
     './image/shadcn.png',
+    './svg/zustand.svg'
   ];
 
   return (
@@ -115,11 +116,34 @@ const Skills = () => {
                     <img src="./image/redux.svg" alt="Redux icon" className="!w-4 !h-4 sm:!w-5 sm:!h-5" /> Redux
                   </span>
                   <span className="tag !flex !items-center !gap-2 !text-xs sm:!text-sm md:!text-base !px-3 !py-1.5 sm:!py-2 !rounded-lg !bg-gray-50 !border !border-gray-200 hover:!bg-gray-100 !transition-colors !duration-200">
+                    <img src="./image/zustand.svg" alt="Redux icon" className="!w-4 !h-4 sm:!w-5 sm:!h-5" /> Zustand
+                  </span>
+                  <span className="tag !flex !items-center !gap-2 !text-xs sm:!text-sm md:!text-base !px-3 !py-1.5 sm:!py-2 !rounded-lg !bg-gray-50 !border !border-gray-200 hover:!bg-gray-100 !transition-colors !duration-200">
                     <img src="./image/bootstrap.png" alt="Bootstrap icon" className="!w-4 !h-4 sm:!w-5 sm:!h-5" /> Bootstrap
                   </span>
                   <span className="tag !flex !items-center !gap-2 !text-xs sm:!text-sm md:!text-base !px-3 !py-1.5 sm:!py-2 !rounded-lg !bg-gray-50 !border !border-gray-200 hover:!bg-gray-100 !transition-colors !duration-200">
                     <img src="./image/tailwind.svg" alt="Tailwind icon" className="!w-4 !h-4 sm:!w-5 sm:!h-5" /> Tailwind CSS
                   </span>
+                </div>
+              </div>
+              {/* Backend & Databases */}
+              <div className="skill-category">
+                <h3 className='!flex !items-center !gap-2 !text-base sm:!text-lg md:!text-xl !font-semibold !text-gray-700 !mb-2'>
+                  <img src="./image/db.svg" alt="Frameworks icon" className="!w-5 !h-5 md:!w-6 md:!h-6" />
+                  Backend & Databases
+                </h3>
+                <div className="tags !flex !flex-wrap !gap-2 sm:!gap-3 !mt-3">
+                  <span className="tag !flex !items-center !gap-2 !text-xs sm:!text-sm md:!text-base !px-3 !py-1.5 sm:!py-2 !rounded-lg !bg-gray-50 !border !border-gray-200 hover:!bg-gray-100 !transition-colors !duration-200">
+                    <img src="./image/nodejs.png" alt="NodeJs icon" className="!w-4 !h-4 sm:!w-5 sm:!h-5" /> Node.Js
+                  </span>
+                  <span className="tag !flex !items-center !gap-2 !text-xs sm:!text-sm md:!text-base !px-3 !py-1.5 sm:!py-2 !rounded-lg !bg-gray-50 !border !border-gray-200 hover:!bg-gray-100 !transition-colors !duration-200">
+                    <img src="./image/expressjs.png" alt="ExpressJS icon" className="!w-4 !h-4 sm:!w-5 sm:!h-5" />
+                    Expess.Js
+                  </span>
+                  <span className="tag !flex !items-center !gap-2 !text-xs sm:!text-sm md:!text-base !px-3 !py-1.5 sm:!py-2 !rounded-lg !bg-gray-50 !border !border-gray-200 hover:!bg-gray-100 !transition-colors !duration-200">
+                    <img src="./image/MongoDB.png" alt="MongoDB icon" className="!w-4 !h-4 sm:!w-5 sm:!h-5" /> MongoDB
+                  </span>
+
                 </div>
               </div>
 
@@ -132,6 +156,9 @@ const Skills = () => {
                 <div className="tags !flex !flex-wrap !gap-2 sm:!gap-3 !mt-3">
                   <span className="tag !flex !items-center !gap-2 !text-xs sm:!text-sm md:!text-base !px-3 !py-1.5 sm:!py-2 !rounded-lg !bg-gray-50 !border !border-gray-200 hover:!bg-gray-100 !transition-colors !duration-200">
                     <img src="./image/github.svg" alt="GitHub icon" className="!w-4 !h-4 sm:!w-5 sm:!h-5" /> GitHub
+                  </span>
+                  <span className="tag !flex !items-center !gap-2 !text-xs sm:!text-sm md:!text-base !px-3 !py-1.5 sm:!py-2 !rounded-lg !bg-gray-50 !border !border-gray-200 hover:!bg-gray-100 !transition-colors !duration-200">
+                    <img src="./image/postman.jpg" alt="Postman icon" className="!w-4 !h-4 sm:!w-5 sm:!h-5" /> Post Man
                   </span>
                   <span className="tag !flex !items-center !gap-2 !text-xs sm:!text-sm md:!text-base !px-3 !py-1.5 sm:!py-2 !rounded-lg !bg-gray-50 !border !border-gray-200 hover:!bg-gray-100 !transition-colors !duration-200">
                     <img src="./image/vscode.svg" alt="VS Code icon" className="!w-4 !h-4 sm:!w-5 sm:!h-5" /> VS Code
@@ -151,7 +178,7 @@ const Skills = () => {
                 </div>
               </div>
 
-              {/* Certifications */}
+              {/* Certification */}
               <div className="skill-category">
                 <h3 className='!flex !items-center !gap-2 !text-base sm:!text-lg md:!text-xl !font-semibold !text-gray-700 !mb-2'>
                   <img src="./svg/certificate.svg" alt="Certificate icon" className="!w-5 !h-5 md:!w-6 md:!h-6" />
@@ -166,6 +193,25 @@ const Skills = () => {
                       className='hover:!underline'
                     >
                       freeCodeCamp – Responsive Web Design (300 hrs)
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              {/* {Experience} */}
+              <div className="skill-category">
+                <h3 className='!flex !items-center !gap-2 !text-base sm:!text-lg md:!text-xl !font-semibold !text-gray-700 !mb-2'>
+                  <img src="./svg/certificate.svg" alt="Certificate icon" className="!w-5 !h-5 md:!w-6 md:!h-6" />
+                  Experience
+                </h3>
+                <ul className="cert-list !mt-3 !space-y-2">
+                  <li className='!text-sm sm:!text-base md:!text-lg !text-blue-600 hover:!text-blue-800 !transition-colors !duration-200'>
+                    <a
+                      href="/resume/Bhuvan-Experience-Letter.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className='hover:!underline'
+                    >
+                      Font-End Developer –  WebX Nepal (6 Months)
                     </a>
                   </li>
                 </ul>
